@@ -1,0 +1,72 @@
+const reasons = [
+  "I love the way you understand me without explaining everything.",
+  "You care about my feelings.",
+  "You never pretend—you’re real.",
+  "You support me even when I doubt myself.",
+  "You trust me.",
+  "You listen with patience.",
+  "You make me feel safe when I talk to you.",
+  "You make me want to be a better version of myself.",
+  "You respect relationships.",
+  "You are soft and kind.",
+  "You think deeply and beautifully.",
+  "You try even when it’s hard.",
+  "Your emotions show how deeply you love.",
+  "You remember little things about me.",
+  "You bring peace to my chaos.",
+  "Your presence feels like home.",
+  "You're mature when needed.",
+  "You're not afraid to express feelings.",
+  "You are loyal.",
+  "You are patient with me.",
+  "You never let me feel alone.",
+  "You handle problems calmly.",
+  "You try to understand before reacting.",
+  "You celebrate my small wins.",
+  "You lift me when I’m down.",
+  "You care about my peace.",
+  "You show love quietly but deeply.",
+  "Everything feels natural with you.",
+  "You're soft even when life isn't.",
+  "Your jealousy is cute—not controlling.",
+  "You choose me even with my flaws.",
+  "Your love is consistent.",
+  "You're not perfect—but perfect for me.",
+  "You make boring days feel special.",
+  "You forgive and move forward.",
+  "You make tough things easier.",
+  "You care for animals and people.",
+  "You are responsible and sensible.",
+  "You're protective in a sweet way.",
+  "You are strong and gentle.",
+  "You speak honestly.",
+  "Silence with you feels comfortable.",
+  "You believe in us.",
+  "You don’t fake emotions.",
+  "You understand my mistakes.",
+  "You respect deeply.",
+  "Your presence feels calming, not tiring.",
+  "We can talk about anything.",
+  "You make me proud.",
+  "You love fully—not halfway.",
+  "We trust each other.",
+  "You fix my bad days with just words.",
+  "You make me feel important.",
+  "Our bond feels rare.",
+  "You inspire me.",
+  "Being with you feels safe.",
+  "You never gave up on us.",
+  "Our connection feels special.",
+  "With you, I don’t have to pretend.",
+  "And most of all — I love you because you're simply YOU."
+];
+
+let index = -1;
+
+function nextReason() {
+  index++;
+  if (index >= reasons.length) index = 0;
+
+  document.getElementById("reason").textContent = reasons[index];
+  document.getElementById("counter").textContent = ${index + 1} / ${reasons.length};
+}

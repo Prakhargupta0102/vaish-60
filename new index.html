@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>60 Reasons I Love You, Vaish 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: radial-gradient(circle at top, #ffdde1, #ee9ca7, #2b1055);
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 450px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: .3s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    h1 { margin-bottom: 5px; font-size: 1.7rem; }
+    #reason { font-size: 1.2rem; margin-top: 15px; min-height: 60px; }
+    #counter { opacity: .6; margin-top: 8px; }
+  </style>
+</head>
+<body>
+
+  <div class="card" onclick="nextReason()">
+    <h1>60 Reasons I Love You, Vaish ❤</h1>
+    <p>Tap to reveal...</p>
+    <div id="reason">✨</div>
+    <div id="counter"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
